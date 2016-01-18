@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:paddingLeft="@dimen/_20ROR"
+                android:paddingRight="@dimen/_20ROR"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.spinages.vWallet.ClaimVoucher">
+
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_margin="@dimen/_10ROR"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/heading"
+                android:layout_marginTop="@dimen/_20ROR"
+                android:textSize="@dimen/_18ROR"
+                android:gravity="center_horizontal"
+                android:text="Terms And Conditions"
+                android:textColor="@color/button_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/termsAndCond"
+                android:layout_below="@+id/heading"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_30ROR"
+                android:layout_marginBottom="@dimen/_30ROR"
+                android:textSize="@dimen/small"
+                android:layout_above="@+id/okay_but"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+                <!--<TextView-->
+                    <!--android:layout_below="@+id/heading"-->
+                    <!--android:id="@+id/tv1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="@dimen/_30ROR"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:text="1. Valid only three months from the  date of purchase."-->
+                    <!--android:textSize="@dimen/small" />-->
+            <!--<TextView-->
+                <!--android:layout_below="@+id/tv1"-->
+                <!--android:id="@+id/tv2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_15ROR"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:text="2. Valid for dine in only."-->
+                <!--android:textSize="@dimen/small" />-->
+            <!--<TextView-->
+                <!--android:layout_below="@+id/tv2"-->
+                <!--android:id="@+id/tv3"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_15ROR"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:text="3. Valid from Mon - Thu: 5pm - 9:15(not including public holidays)."-->
+                <!--android:textSize="@dimen/small" />-->
+            <!--<TextView-->
+                <!--android:layout_below="@+id/tv3"-->
+                <!--android:id="@+id/tv4"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_15ROR"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:text="4. Not valid with other promotions and discounts."-->
+                <!--android:textSize="@dimen/small" />-->
+            <!--<TextView-->
+                <!--android:layout_below="@+id/tv4"-->
+                <!--android:id="@+id/tv5"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_15ROR"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:text="5. Voucher prices displayed are inclusive of gst and service charges."-->
+                <!--android:textSize="@dimen/small" />-->
+            <Button
+
+                android:id="@+id/okay_but"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/_40ROR"
+                android:layout_marginRight="@dimen/_40ROR"
+                android:layout_alignParentBottom="true"
+                android:text="Ok"
+                android:background="@color/button_background"
+                android:layout_marginBottom="@dimen/_10ROR"
+                android:layout_centerHorizontal="true"
+                android:layout_height="@dimen/_30ROR"/>
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
+

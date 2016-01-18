@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center" android:paddingLeft="@dimen/_20ROR"
+    android:paddingRight="@dimen/_20ROR"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.spinages.vWallet.ClaimVoucher">
+
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_margin="@dimen/_10ROR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/heading"
+            android:layout_marginTop="@dimen/_20ROR"
+            android:textSize="@dimen/_20ROR"
+            android:gravity="center_horizontal"
+            android:text="Reviews"
+            android:textColor="@color/button_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/termsAndCond"
+            android:layout_below="@+id/heading"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_30ROR"
+            android:layout_marginBottom="@dimen/_30ROR"
+            android:textSize="@dimen/small"
+            android:layout_above="@+id/okay_but"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+
+            android:id="@+id/okay_but"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_40ROR"
+            android:layout_marginRight="@dimen/_40ROR"
+            android:layout_alignParentBottom="true"
+            android:text="Ok"
+            android:background="@color/button_background"
+            android:layout_marginBottom="@dimen/_10ROR"
+            android:layout_centerHorizontal="true"
+            android:layout_height="@dimen/_30ROR"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

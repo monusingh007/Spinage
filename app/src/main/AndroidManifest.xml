@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spinages.app" >
+
+    <uses-sdk android:minSdkVersion="12" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/spinages"
+        android:label=""
+        android:theme="@style/MyMaterialTheme" >
+        <activity
+            android:name=".LoginPage"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.spinages.vWallet.HistoryPhysicalDetails"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"/>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".Slider"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ReviewDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomDialogTheme"/>
+        <activity
+            android:name=".InterestPage"
+            android:screenOrientation="portrait"
+            android:label="Interest" />
+        <activity
+            android:name=".ReferalActivity"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/facebook_app_name" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider724860310980400"
+            android:exported="true" />
+
+        <!-- Inbox Activity -->
+        <activity android:name="com.spinages.vWallet.AllVouchers"
+            android:screenOrientation="portrait"/>
+
+        <!-- Outbox Activity -->
+        <activity android:name="com.spinages.vWallet.EVouchers"
+            android:screenOrientation="portrait"/>
+
+        <!-- Profile Activity -->
+        <activity android:name="com.spinages.vWallet.PVouchers"
+            android:screenOrientation="portrait"/>
+        <!-- tabhost activity -->
+        <activity android:name="com.spinages.vWallet.VwalletMainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.spinages.vWallet.AddPhysicalVoucher"
+            android:label="@string/title_activity_vwallet"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.spinages.vWallet.VoucherDetails"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_claim" >
+        </activity>
+        <activity
+            android:name="com.spinages.vWallet.CongratulationActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_congratulation" >
+        </activity>
+        <activity
+            android:name="com.spinages.rewards.RewardsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_rewards" >
+        </activity>
+        <activity
+            android:name="com.spinages.rewards.RedeemCodeActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_redeem_code" >
+        </activity>
+        <activity
+            android:name="com.spinages.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.spinages.vWallet.History"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_history" >
+        </activity>
+        <activity
+            android:name="com.spinages.vWallet.ClaimVoucher"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomDialogTheme" >
+        </activity>
+        <activity
+            android:name=".TermsNdCondDialog"
+            android:label="@string/title_activity_terms_nd_cond_dialog"
+            android:theme="@style/CustomDialogTheme" >
+        </activity>
+        <activity
+            android:name="com.spinages.vWallet.DeleteVoucherActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_delete_voucher" >
+        </activity>
+        <activity
+            android:name="com.spinages.vWallet.DeletePhysicalVoucher"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_delete_physical_voucher" >
+        </activity>
+        <activity android:name="com.spinages.vWallet.HistoryVoucherDetails"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

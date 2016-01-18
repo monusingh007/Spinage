@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#E53935</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="windowBackground">#f17172</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#FF8A80</color>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="cardview_initial_background">#71C3DE</color>
+
+    <color name="textcolor">#fff</color>
+    <color name="button_background">#c1392b</color>
+    <color name="black">#000000</color>
+    <color name="fb_color">#37579e</color>
+    <color name="voucher_color">#000000</color>
+    <color name="saleti">#606366</color>
+</resources>

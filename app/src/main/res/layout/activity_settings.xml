@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    >
+    <LinearLayout
+        android:id="@+id/titlelayout"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/navigation_bg_box"
+        android:layout_height="@dimen/_50ROR">
+        <TextView
+            android:id="@+id/title"
+            android:text="Settings"
+            android:typeface="sans"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/activityTitle"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:id="@+id/setting_CardView"
+        android:layout_below="@+id/titlelayout"
+        android:layout_width="match_parent"
+        card_view:cardBackgroundColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10ROR"
+        android:layout_marginRight="@dimen/_10ROR"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2ROR"
+                android:background="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/Setting_notification_layout"
+                android:layout_width="match_parent"
+
+                android:layout_height="@dimen/_50ROR"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/Setting_notification_icon"
+                    android:layout_marginLeft="@dimen/_5ROR"
+                    android:layout_width="@dimen/_20ROR"
+                    android:layout_height="@dimen/_20ROR"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/notification_setting" />
+
+                <TextView
+                    android:id="@+id/Setting_notification_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:typeface="sans"
+                    android:layout_marginLeft="@dimen/_10ROR"
+                    android:layout_toRightOf="@id/Setting_notification_icon"
+                    android:text="@string/setting_notification_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large" />
+            </RelativeLayout>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_2ROR"-->
+                <!--android:background="@color/black" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/Setting_account_layout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_50ROR"-->
+
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/Setting_account_icon"-->
+                    <!--android:layout_width="@dimen/_20ROR"-->
+                    <!--android:layout_height="@dimen/_20ROR"-->
+                    <!--android:layout_marginLeft="@dimen/_5ROR"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:src="@drawable/account_setting" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/Setting_account_text"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:typeface="sans"-->
+                    <!--android:layout_marginLeft="@dimen/_10ROR"-->
+                    <!--android:layout_toRightOf="@id/Setting_account_icon"-->
+                    <!--android:text="@string/setting_Account_text"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/large" />-->
+            <!--</RelativeLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2ROR"
+
+                android:background="@color/black" />-
+
+            <RelativeLayout
+                android:id="@+id/Setting_term_policies_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50ROR"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/Setting_term_policies_icon"
+                    android:layout_width="@dimen/_20ROR"
+                    android:layout_height="@dimen/_20ROR"
+                    android:layout_marginLeft="@dimen/_5ROR"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/terms" />
+
+                <TextView
+                    android:id="@+id/Setting_term_policies_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10ROR"
+                    android:typeface="sans"
+                    android:layout_toRightOf="@id/Setting_term_policies_icon"
+                    android:text="@string/setting_term_policies_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2ROR"
+                android:background="@color/black" />-
+
+            <RelativeLayout
+                android:id="@+id/Setting_report_problem_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50ROR"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/Setting_report_problem_icon"
+                    android:layout_width="@dimen/_20ROR"
+                    android:layout_height="@dimen/_20ROR"
+                    android:layout_marginLeft="@dimen/_5ROR"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/report_problm" />
+
+                <TextView
+                    android:id="@+id/Setting_report_problem_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10ROR"
+                    android:typeface="sans"
+                    android:layout_toRightOf="@id/Setting_report_problem_icon"
+                    android:text="@string/setting_report_problem_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2ROR"
+                android:background="@color/black" />-
+
+            <RelativeLayout
+                android:id="@+id/Setting_logout_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50ROR"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/Setting_logout_icon"
+                    android:layout_width="@dimen/_20ROR"
+                    android:layout_height="@dimen/_20ROR"
+                    android:layout_marginLeft="@dimen/_5ROR"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/log_out" />
+
+                <TextView
+                    android:id="@+id/Setting_logout_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10ROR"
+                    android:layout_toRightOf="@id/Setting_logout_icon"
+                    android:text="@string/setting_logout_text"
+                    android:typeface="sans"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2ROR"
+                android:background="@color/black" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

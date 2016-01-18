@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+    android:background="@android:color/white"
+                tools:context="com.spinages.vWallet.ClaimVoucher">
+
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/redeem_text"
+    android:layout_width="match_parent"
+    android:textSize="@dimen/small"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/_20ROR"
+    android:text="@string/redeem_code_text"
+    android:textColor="#666666"
+    android:layout_height="@dimen/_20ROR"/>
+
+            <EditText
+                android:id="@+id/code"
+                android:layout_below="@+id/redeem_text"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_20ROR"
+                android:gravity="center"
+                android:layout_height="@dimen/button_height"
+                android:layout_centerHorizontal="true"
+                android:background="#666666"
+                android:textSize="@dimen/medium" />
+
+            <Button
+                android:id="@+id/apply_but"
+                android:layout_marginLeft="@dimen/_20ROR"
+                android:layout_marginRight="@dimen/_20ROR"
+                android:layout_marginBottom="@dimen/_20ROR"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_below="@+id/code"
+                android:text="@string/verify"
+                android:textColor="@color/textcolor"
+                android:background="@color/button_background"
+                android:textSize="@dimen/large" />
+
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

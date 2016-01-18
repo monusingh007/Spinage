@@ -1,0 +1,223 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg"
+   >
+    <RelativeLayout
+        android:background="@drawable/bg"
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/titlelayout"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50ROR">
+            <TextView
+                android:id="@+id/title"
+                android:text="V-Wallet"
+                android:typeface="sans"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/activityTitle"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/layout1"
+            android:layout_below="@id/titlelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/front"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_110ROR"
+                android:contentDescription="front"
+                android:scaleType="fitXY"
+                android:background="@drawable/voucher_front" />
+            <RelativeLayout
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/_2ROR"
+                android:visibility="invisible"
+                android:layout_marginRight="@dimen/_2ROR"
+                android:background="@drawable/transparent_rectangle"
+                android:layout_height="@dimen/_25ROR">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/front"
+                    android:typeface="sans"
+                    android:textColor="@color/saleti"
+                    android:textSize="@dimen/small"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10ROR"
+                    android:layout_gravity="bottom"/>
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_10ROR"
+                    android:layout_marginLeft="@dimen/_150ROR"
+                    android:layout_width="@dimen/_25ROR"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/camera"
+
+                    android:layout_height="@dimen/_20ROR"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/layout2"
+            android:layout_below="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_110ROR"
+                android:layout_below="@+id/layout1"
+                android:contentDescription=""
+                android:scaleType="fitXY"
+                android:background="@drawable/voucher_back" />
+            <RelativeLayout
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                android:layout_marginLeft="@dimen/_2ROR"
+                android:layout_marginRight="@dimen/_2ROR"
+                android:background="@drawable/transparent_rectangle"
+                android:layout_height="@dimen/_30ROR">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/back"
+                    android:textColor="@color/saleti"
+                    android:typeface="sans"
+                    android:textSize="@dimen/small"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10ROR"
+
+                    />
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_10ROR"
+                    android:layout_marginLeft="@dimen/_150ROR"
+                    android:layout_width="@dimen/_25ROR"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/camera"
+
+                    android:layout_height="@dimen/_20ROR"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_below="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:background="@drawable/transparent_box"
+            android:layout_height="@dimen/_150ROR">
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="@dimen/_70ROR"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5ROR"
+                android:layout_marginTop="@dimen/_20ROR"
+                android:text="@string/description_textview"
+                android:typeface="sans"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/small" />
+
+            <EditText
+                android:id="@+id/descriptionData"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80ROR"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10ROR"
+                android:layout_alignParentStart="false"
+                android:background="@drawable/description_box"
+                android:layout_alignParentLeft="false"
+                android:scrollbars="vertical"
+                android:layout_marginRight="@dimen/_10ROR"
+                android:typeface="sans"
+                android:focusable="false"
+                android:inputType="textMultiLine"
+                android:layout_alignParentRight="false"
+                android:layout_marginLeft="@dimen/_10ROR"
+                android:layout_toRightOf="@id/description"
+                android:gravity="top"
+
+                android:padding="@dimen/_10ROR"
+
+                android:hint="@string/description_editext"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/textcolor"
+                android:textSize="@dimen/small" />
+
+            <TextView
+                android:id="@+id/expiry_date"
+                android:layout_width="@dimen/_70ROR"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20ROR"
+                android:textColor="@color/textcolor"
+                android:typeface="sans"
+                android:layout_marginLeft="@dimen/_5ROR"
+                android:layout_below="@+id/descriptionData"
+                android:text="@string/date_texview"
+                android:textSize="@dimen/small" />
+
+            <EditText
+                android:id="@+id/date_Data"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25ROR"
+                android:layout_alignParentEnd="true"
+                android:typeface="sans"
+                android:layout_alignParentRight="false"
+                android:layout_below="@+id/descriptionData"
+                android:textColor="@color/textcolor"
+                android:paddingLeft="@dimen/_10ROR"
+                android:focusable="false"
+                android:layout_marginTop="@dimen/_15ROR"
+                android:layout_marginLeft="@dimen/_10ROR"
+                android:layout_toRightOf="@id/expiry_date"
+                android:hint="@string/date_edittext"
+                android:inputType="date"
+                android:layout_marginRight="@dimen/_10ROR"
+                android:background="@drawable/expiry_date_box"
+                android:textColorHint="@color/textcolor"
+                android:textSize="@dimen/small" />
+        </RelativeLayout>
+
+        <!--<Button-->
+            <!--android:id="@+id/upload_voucher"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/_30ROR"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--v-->
+            <!--android:textColor="@color/textcolor"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:layout_marginLeft="@dimen/_20ROR"-->
+            <!--android:layout_marginRight="@dimen/_20ROR"-->
+            <!--android:layout_marginBottom="@dimen/_20ROR"-->
+            <!--android:background="@color/button_background"-->
+            <!--android:text="Delete"-->
+            <!--android:textSize="@dimen/large" />-->
+    </RelativeLayout>
+
+</RelativeLayout>

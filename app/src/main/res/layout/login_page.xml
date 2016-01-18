@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    
+    >
+    <LinearLayout
+        android:id="@+id/linear0"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_50ROR"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/_40ROR"
+        android:layout_marginRight="@dimen/_40ROR"
+        android:layout_height="@dimen/_50ROR"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+       <ImageView
+           android:src="@drawable/logo"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_50ROR"
+           android:layout_gravity="center" />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/login_fb_layout"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/_15ROR"
+        android:layout_marginRight="@dimen/_15ROR"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/Login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/_15ROR"
+            android:gravity="center"
+            android:typeface="sans"
+            android:background="@drawable/button_fblogin"
+            android:paddingTop="@dimen/_10ROR"
+            android:paddingBottom="@dimen/_10ROR"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/login_fb_layout">
+        <TextView
+            android:id="@+id/login_fb_signin_signup_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:typeface="sans"
+            android:layout_marginTop="@dimen/_5ROR"
+            android:gravity="center"
+            android:text="@string/login_fb_signin_signup_text"
+            android:textColor="#fafafa"
+            android:textSize="@dimen/small" />
+
+        <TextView
+            android:id="@+id/login_fb_term_cond_text"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@+id/login_fb_signin_signup_text"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_2ROR"
+            android:gravity="center"
+            android:typeface="sans"
+            style="@style/Hyperlink"
+            android:textColorLink="@color/button_background"
+            android:text="@string/login_fb_term_cond_text"
+            android:textSize="@dimen/small" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_signup_Relayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+<!--
+        <LinearLayout
+            android:id="@+id/login_signup_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/login_signup_ForPartners_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_10ROR"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/login_signup_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40ROR"
+                android:layout_margin="@dimen/_20ROR"
+                android:background="@drawable/sighn_up"
+                android:textColor="#fafafa"
+                android:textSize="@dimen/_13ROR" />
+
+
+            <Button
+                android:id="@+id/login_login_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40ROR"
+                android:layout_marginRight="@dimen/_20ROR"
+                android:layout_marginLeft="@dimen/_20ROR"
+                android:background="@drawable/login"
+                android:textColor="#fafafa"
+                android:textSize="@dimen/_13ROR" />
+        </LinearLayout>
+-->
+        <LinearLayout
+            android:id="@+id/login_signup_ForPartners_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_60ROR"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/_10ROR"
+            android:layout_alignParentStart="false">
+
+            <TextView
+                android:id="@+id/login_for_partnertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="sans"
+                android:text="@string/login_for_partnertext"
+                android:textColor="#fafafa"
+                android:textSize="@dimen/small" />
+
+            <TextView
+                android:id="@+id/login_for_partner_clickhere_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2ROR"
+android:typeface="sans"
+                android:text="@string/login_for_partner_clickhere_text"
+                android:textColor="@color/button_background"
+                android:layout_marginBottom="@dimen/_20ROR"
+                android:textSize="@dimen/small" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

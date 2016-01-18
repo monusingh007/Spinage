@@ -1,0 +1,149 @@
+<resources>
+
+    <string name="app_name">Spinages</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="action_search">Search</string>
+    <string name="nav_item_home">Spinage Tree</string>
+    <string name="nav_item_friends">V-wallet</string>
+    <string name="nav_item_notifications">Rewards</string>
+    <string name="nav_item_help">Settings</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_help</item>
+    </string-array>
+
+
+
+    <string name="title_activity_slider">Slider</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <!-- facebook  strings  -->
+    <string name="facebook_app_id">724860310980400</string>
+    <string name="app_invite_error">app invite error</string>
+    <string name="error_dialog_title">Error!</string>
+    <string name="error_ok_button">OK</string>
+    <string name="facebook_app_name">SpinagesApp</string>
+
+    <!-- vishaal strings  -->
+    <string name="login_fb_signin_signup_text">By Signing in/up Users have agreed to the</string>
+    <string name="login_fb_term_cond_text">Terms and Conditions</string>
+    <string name="login_for_partnertext">For Partners Click</string>
+    <string name="login_for_partner_clickhere_text">here</string>
+    <string name="login_login_text">Login</string>
+    <string name="login_signup_text">Sign Up</string>
+    <string name="like_us">Like us if u agree</string>
+    <string name="like_but">like us</string>
+    <string name="sighnup_dateofbirth">Date of birth</string>
+
+    <string name="sighup_gender">Gender</string>
+
+    <!-- SignUp Page Text -->
+    <string name="signup_username">User Name</string>
+    <string name="signup_email">Email</string>
+    <string name="signup_password">Password</string>
+    <string name="signup_Submit">Submit</string>
+    <string name="signup_Fname">First Name</string>
+    <string name="signup_Lname">Last Name</string>
+    <string name="signup_Email">Email</string>
+    <string name="signup_Address">Address</string>
+    <string name="signup_Mobile">Mobile No.</string>
+    <string name="signup_DateOfBirth">Date Of Birth</string>
+    <string name="signup_Gender">Gender</string>
+    <string name="signup_ReferalCode">Referral Code</string>
+    <string name="signup_VillingTrvl">Willing To Travel</string>
+    <!--User Interest Page-->
+    <string name="tell_us">Tell us what you </string>
+    <string name="interest_tell_us_text">Tell us what you like</string><string name="interest_choose_atleast">Choose at least 3</string><string name="interest_next">Next</string>
+
+    <!-- Setting Page Text -->
+    <string name="setting_notification_text">Notification Settings</string>
+    <string name="setting_Account_text">Account Settings</string>
+    <string name="setting_term_policies_text">Terms and Policies</string>
+    <string name="setting_report_problem_text">Report a Problem</string>
+    <string name="setting_logout_text">Log Out</string>
+    <!-- SignIn Page Text -->
+    <string name="signin_email">Email</string>
+    <string name="signin_password">Password</string>
+    <string name="signin_Submit">Login</string>
+    <string name="forgot_password">Forgot Password!</string>
+    <!-- SignUp Page Text -->
+
+    <string name="title_activity_invitaion">InvitaionActivity</string>
+    <string name="title_activity_share_on_fb">ShareOnFbActivity</string>
+    <!--tree Activity -->
+    <string name="spindo_text">Spindoes</string>
+    <string name="spindo_alert">Shake the tree to win </string>
+    <string name="okay_button">Okay!</string>
+    <string name="title_activity_vwallet">Vwallet</string>
+    <!--v wallet -->
+    <string name="description_editext"></string>
+    <string name="front">Front </string>
+    <string name="back">Back </string>
+    <string name="description_textview">Description</string>
+    <string name="date_texview">Expiry Date</string>
+    <string name="date_edittext">MM-DD-YYYY</string>
+    <string name="upload_button">Upload Voucher</string>
+    <string name="title_activity_claim">ClaimActivity</string>
+    <!--v wallet claim activity -->
+    <string name="validity">Voucher Validity Time</string>
+    <string name="days">Voucher validity Days:</string>
+    <string name="period">Voucher validity Period:</string>
+    <string name="reviews">Reviews</string>
+    <string name="number">Contact number:</string>
+    <string name="location">Location Available:</string>
+    <string name="id">Voucher Id:</string>
+    <string name="terms">Terms and Condition</string>
+    <string name="next_button">Claim</string>
+    <string name="process">This process id irreversible, Only press this if it is verified by the staff </string>
+    <string name="title_activity_congratulation">CongratulationActivity</string>
+
+    <!--v wallet congratulation activity -->
+    <string name="congo"><u>CONGRATULATIONS</u></string>
+    <string name="congo_text">Remember to like our partners and our Facebook page for their continual support and more vuchers</string>
+    <string name="freespindo">Gets you one free spindo</string>
+    <string name="title_activity_rewards">RewardsActivity</string>
+    <string name="code">Redeem a Code</string>
+    <string name="refer">Refer my friends</string>
+    <string name="spindo_two">(Get two free spindo)</string>
+    <string name="title_activity_redeem_code">RedeemCodeActivity</string>
+
+    <!--redeem code  activity -->
+     <string name="hint_text">Enter promo/referal code</string>
+      <string name="button">Apply</string>
+    <string name="announcement"><u>Announcement</u></string>
+    <string name="hey">Hey!</string>
+    <string name="annoucemnet_text">Report to us an issue/bugs to gain youself an additional rewards
+        from us. However abusing of bugs/error may result in getting banned.</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_history">History</string>
+
+    <!--recyler view of history fragment activity-->
+    <string name="element_text">Voucher history</string>
+    <string name="grid_layout_manager">Grid Layout Manager</string>
+    <string name="linear_layout_manager">Linear Layout Manager</string>
+    <string name="code_hint">code here </string>
+    <string name="title_activity_spinage_tree">SpinageTree</string>
+
+<!-- slider strings-->
+
+<string name="ok">Ok</string>
+    <string name="expiry_Date">Expiry Date</string>
+    <string name="title_activity_claim_voucher">ClaimVoucher</string>
+    <!-- slider strings-->
+    <string name="redeem_code_text">Allow the staff to key in the code</string>
+    <string name="verify">Verify</string>
+    <string name="title_activity_terms_nd_cond_dialog">TermsNdCondDialog</string>
+
+    <string name="com_facebook_loginview_log_in_button_long"> </string>
+    <string name="com_facebook_loginview_log_out_action">Logout</string>
+    <string name="com_facebook_loginview_log_out_button"> </string>
+    <string name="title_activity_delete_voucher">DeleteVoucher</string>
+    <string name="title_activity_delete_physical_voucher">DeletePhysicalVoucher</string>
+</resources>

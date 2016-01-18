@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:id="@+id/titlelayout"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/navigation_bg_box"
+        android:layout_height="@dimen/_50ROR">
+    <TextView
+        android:id="@+id/title"
+        android:text="Interest"
+        android:typeface="sans"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/activityTitle"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relative1"
+        android:layout_below="@+id/titlelayout"
+        android:background="@drawable/transparent_box_big"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_50ROR"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_30ROR"
+            android:layout_marginRight="@dimen/_30ROR"
+            android:layout_height="@dimen/_50ROR">
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50ROR"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+
+
+        <!-- Login Button in the
+         same style as LikeView
+           <LinearLayout
+            android:id="@+id/btnLoginToLike"
+            android:background="@drawable/com_facebook_button_like_background"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/_10ROR"
+            android:layout_marginLeft="@dimen/_10ROR"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50ROR"
+            android:layout_below="@+id/linear1"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:clickable="true" >
+
+            <ImageView
+                android:src="@drawable/com_facebook_button_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginBottom="7.5dp"/>
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:text="Like us on facebook"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="8dp"
+                android:textColor="#fafafa"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        -->
+
+
+
+        <com.facebook.share.widget.LikeView
+            android:id="@+id/likeView"
+            android:layout_below="@id/linear1"
+            android:layout_marginTop="@dimen/_50ROR"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+<LinearLayout
+    android:id="@+id/likeusLayout"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginBottom="@dimen/_10ROR"
+    android:layout_below="@+id/likeView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+    android:text="GETS YOU"
+    android:gravity="center"
+        android:typeface="sans"
+        android:textSize="@dimen/_8ROR"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_15ROR"/>
+    <ImageView
+        android:src="@drawable/spinage_logo"
+        android:layout_marginLeft="@dimen/_5ROR"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_15ROR"/>
+    <TextView
+        android:text="+1"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/_5ROR"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/_8ROR"
+        android:typeface="sans"
+        android:layout_height="@dimen/_15ROR"/>
+    <ImageView
+        android:layout_marginLeft="@dimen/_5ROR"
+        android:src="@drawable/spindo_like_small"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25ROR"/>
+</LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:background="@drawable/referel_code_bg"
+        android:layout_below="@+id/relative1"
+        android:layout_marginTop="@dimen/_2ROR"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50ROR"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/refrl_Code_txt"
+            android:textColor="#fafafa"
+            android:layout_gravity="center"
+            android:typeface="sans"
+            android:layout_marginTop="@dimen/_10ROR"
+            android:layout_marginBottom="@dimen/_10ROR"
+            android:layout_marginLeft="@dimen/_30ROR"
+            android:textSize="@dimen/medium"
+            android:text="Referal Code:"/>
+        <EditText
+            android:id="@+id/refrl_code_edttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor"
+            android:layout_marginTop="@dimen/_10ROR"
+            android:layout_marginBottom="@dimen/_10ROR"
+            android:hint="@string/code_hint"
+            android:layout_gravity="center"
+            android:typeface="sans"
+            android:layout_marginLeft="@dimen/_100ROR"
+            android:background="#00000000"
+            android:textColorHint="@color/textcolor"
+            android:textSize="@dimen/medium"
+           />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:id="@+id/skip_btn"
+        android:layout_below="@+id/linear3"
+        android:layout_marginRight="@dimen/_20ROR"
+        android:layout_marginLeft="@dimen/_20ROR"
+        android:layout_marginTop="@dimen/_50ROR"
+        android:textSize="@dimen/large"
+        android:textAllCaps="false"
+        android:typeface="sans"
+        android:background="@color/button_background"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textcolor"
+        android:text="Skip"/>
+
+</RelativeLayout>

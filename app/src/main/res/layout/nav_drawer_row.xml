@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50ROR"
+                android:layout_gravity="left"
+                android:background="@color/cardview_light_background"
+                android:clickable="true">
+    <ImageView
+        android:id="@+id/top"
+        android:background="@color/button_material_dark"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1ROR"/>
+    <RelativeLayout
+        android:layout_below="@id/top"
+        android:id="@+id/image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_marginLeft="@dimen/_5ROR"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/_30ROR"
+            android:layout_height="@dimen/_30ROR"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_toRightOf="@+id/image_layout"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/_10ROR"
+        android:textSize="@dimen/_13ROR"
+        android:textColor="@color/button_material_dark"
+        />
+
+
+</RelativeLayout>

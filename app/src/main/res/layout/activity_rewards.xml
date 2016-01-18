@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.spinages.rewards.RewardsActivity">
+    <LinearLayout
+        android:id="@+id/titlelayout"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/navigation_bg_box"
+        android:layout_height="@dimen/_50ROR">
+        <TextView
+            android:id="@+id/title"
+            android:text="Rewards"
+            android:typeface="sans"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/activityTitle"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:elevation="@dimen/_80ROR"
+        android:layout_below="@+id/titlelayout"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+       >
+<RelativeLayout
+    android:id="@+id/layout1"
+    android:layout_margin="@dimen/_5ROR"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_80ROR">
+
+<ImageView
+    android:id="@+id/image1"
+    android:src="@drawable/redeem_code"
+android:layout_centerVertical="true"
+    android:layout_width="@dimen/_40ROR"
+    android:layout_height="@dimen/_40ROR" />
+        <TextView
+            android:id="@+id/code"
+            android:layout_toRightOf="@+id/image1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_40ROR"
+            android:layout_width="wrap_content"
+            android:typeface="sans"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large"
+            android:text="@string/code" />
+</RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_below="@+id/card_view1"
+        android:layout_marginTop="@dimen/_1ROR"
+        android:layout_width="match_parent"
+        android:elevation="@dimen/_80ROR"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+       >
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_margin="@dimen/_5ROR"
+            android:layout_width="match_parent"
+            
+            android:layout_height="@dimen/_80ROR">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:src="@drawable/referr_friendws"
+                android:layout_width="@dimen/_40ROR"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/_40ROR" />
+            <TextView
+                android:id="@+id/refer"
+                android:layout_toRightOf="@+id/image2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_40ROR"
+                android:layout_width="wrap_content"
+                android:typeface="sans"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large"
+                android:text="@string/refer" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <com.facebook.share.widget.LikeView
+        android:id="@+id/likeView1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="@dimen/_100ROR"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_80ROR"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="GETS YOU"
+            android:gravity="center"
+            android:textSize="@dimen/small"
+            android:typeface="sans"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15ROR"/>
+
+        <TextView
+            android:text="+2"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_5ROR"
+            android:typeface="sans"
+            android:textSize="@dimen/small"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15ROR"/>
+        <ImageView
+            android:layout_marginLeft="@dimen/_5ROR"
+            android:src="@drawable/spindo_like_small"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15ROR"/>
+    </LinearLayout>
+</RelativeLayout>

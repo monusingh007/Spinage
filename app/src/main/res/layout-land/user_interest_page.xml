@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/interest_tellus_txt"
+        android:textSize="@dimen/_20ROR"
+        android:layout_margin="@dimen/large"
+        android:textColor="@color/textcolor"
+        android:text="@string/interest_tell_us_text" />
+    <TextView
+        android:id="@+id/interest_choose_atl_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF616568"
+        android:layout_marginTop="@dimen/_40ROR"
+        android:layout_below="@+id/interest_tellus_txt"
+        android:textSize="@dimen/small"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:text="@string/interest_choose_atleast" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/interest_CardView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5ROR"
+        android:layout_marginBottom="@dimen/_30ROR"
+        android:layout_marginLeft="@dimen/_10ROR"
+        android:layout_marginRight="@dimen/_10ROR"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Interest_next_btn"
+        android:layout_below="@id/interest_choose_atl_txt"
+     >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/interest_List"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:fadingEdge="horizontal"
+                android:layout_height="wrap_content" >
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/Interest_next_btn"
+        android:text="@string/interest_next"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_20ROR"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/_20ROR"
+        android:layout_marginRight="@dimen/_20ROR"
+       android:background="@color/button_background"
+        android:layout_marginBottom="@dimen/_20ROR"
+        android:textSize="@dimen/large"
+        android:layout_height="@dimen/button_height" />
+</RelativeLayout>

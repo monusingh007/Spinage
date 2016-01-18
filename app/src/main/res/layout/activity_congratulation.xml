@@ -1,0 +1,395 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.spinages.vWallet.CongratulationActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_2ROR"
+        android:layout_marginTop="@dimen/_30ROR"
+        android:background="@drawable/alertwhitbackground"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:id="@+id/congo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20ROR"
+            android:gravity="center_horizontal"
+            android:text="@string/congo"
+            android:textSize="@dimen/large"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/congoText0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/congo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_10ROR"
+            android:layout_marginRight="@dimen/_10ROR"
+            android:layout_marginTop="@dimen/_10ROR"
+            android:gravity="center_horizontal"
+            android:text="You have successfully claim the voucher"
+            android:textSize="@dimen/medium"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/congoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/congoText0"
+            android:layout_marginBottom="@dimen/_20ROR"
+            android:layout_marginLeft="@dimen/_10ROR"
+            android:layout_marginRight="@dimen/_10ROR"
+            android:gravity="center"
+            android:text="@string/congo_text"
+            android:textSize="@dimen/medium"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="@dimen/_1ROR"
+        android:background="@android:color/white">
+
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="@dimen/_100ROR"
+            android:layout_height="@dimen/_100ROR"
+            android:layout_marginBottom="@dimen/_15ROR"
+            android:layout_marginLeft="@dimen/_10ROR"
+            android:layout_marginTop="@dimen/_15ROR"
+            android:src="@drawable/mcdonalds_logo" />
+
+        <LinearLayout
+            android:id="@+id/likeview_cover"
+            android:layout_width="@dimen/_60ROR"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_40ROR"
+            android:layout_marginRight="@dimen/_30ROR"
+            android:layout_toRightOf="@+id/image1"
+            android:gravity="right">
+
+            <com.facebook.share.widget.LikeView
+
+                android:id="@+id/likeView1"
+                android:layout_width="@dimen/_58ROR"
+                android:layout_height="@dimen/_25ROR"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/likeusLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/likeview_cover"
+            android:layout_marginRight="@dimen/_10ROR"
+            android:layout_marginTop="@dimen/_55ROR"
+            android:layout_toRightOf="@+id/image1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15ROR"
+                android:gravity="center"
+                android:text="GETS YOU"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/small"
+                android:typeface="sans" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="@dimen/_20ROR"
+                android:layout_height="@dimen/_15ROR"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_5ROR"
+                android:src="@drawable/spinage_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15ROR"
+                android:layout_marginLeft="@dimen/_5ROR"
+                android:gravity="center"
+                android:text="+1"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/small"
+                android:typeface="sans" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15ROR"
+                android:layout_marginLeft="@dimen/_5ROR"
+                android:src="@drawable/spindo_like_small" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--   <TextView
+           android:id="@+id/line"
+           android:layout_below="@+id/layout2"
+           android:background="#dbdbdb"
+           android:layout_width="match_parent"
+           android:layout_height="1dp" />
+
+
+           <RelativeLayout
+               android:id="@+id/layout3"
+               android:background="@android:color/white"
+               android:layout_below="@+id/line"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+               <ImageView
+                   android:id="@+id/image2"
+                   android:src="@drawable/mcdonalds_logo"
+                   android:layout_marginLeft="@dimen/_10ROR"
+                   android:layout_marginTop="@dimen/_15ROR"
+                   android:layout_marginBottom="@dimen/_15ROR"
+                   android:layout_width="@dimen/_80ROR"
+                   android:layout_height="@dimen/_80ROR" />
+
+               <com.facebook.share.widget.LikeView
+                   android:id="@+id/likeView2"
+                   android:layout_width="wrap_content"
+                   android:layout_marginLeft="@dimen/_40ROR"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="@dimen/_30ROR"
+                   android:layout_height="wrap_content"
+
+                   />
+               <LinearLayout
+                   android:id="@+id/likeusLayout2"
+                   android:orientation="horizontal"
+                   android:gravity="right"
+                   android:layout_marginRight="@dimen/_10ROR"
+                   android:layout_toRightOf="@id/image2"
+                   android:layout_marginTop="@dimen/_45ROR"
+                   android:layout_below="@+id/likeView2"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:text="Gets you"
+                       android:textSize="@dimen/small"
+                       android:gravity="center"
+                       android:textColor="@android:color/black"
+                       android:layout_width="wrap_content"
+                       android:layout_height="@dimen/_15ROR"/>
+                   <ImageView
+                       android:src="@drawable/spinage_logo"
+                       android:layout_marginLeft="@dimen/_5ROR"
+                       android:layout_gravity="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="@dimen/_15ROR"/>
+                   <TextView
+                       android:text="+1"
+                       android:gravity="center"
+                       android:textSize="@dimen/small"
+                       android:textColor="@android:color/black"
+                       android:layout_marginLeft="@dimen/_5ROR"
+                       android:layout_width="wrap_content"
+                       android:layout_height="@dimen/_15ROR"/>
+                   <ImageView
+                       android:layout_marginLeft="@dimen/_5ROR"
+                       android:src="@drawable/spindo_like_small"
+                       android:layout_width="wrap_content"
+                       android:layout_height="@dimen/_15ROR"/>
+               </LinearLayout>
+           </RelativeLayout>
+   -->
+
+    <Button
+        android:id="@+id/fb_share_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/likeusLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_5ROR"
+        android:layout_marginLeft="@dimen/_10ROR"
+        android:layout_marginRight="@dimen/_10ROR"
+        android:background="@drawable/button"
+        android:textSize="@dimen/large" />
+
+    <LinearLayout
+        android:id="@+id/likeusLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_20ROR"
+        android:layout_marginTop="@dimen/_5ROR"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15ROR"
+            android:gravity="center"
+            android:text="GETS YOU"
+            android:textSize="@dimen/small" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15ROR"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_5ROR"
+            android:src="@drawable/spinage_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15ROR"
+            android:layout_marginLeft="@dimen/_5ROR"
+            android:gravity="center"
+            android:text="+1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15ROR"
+            android:layout_marginLeft="@dimen/_5ROR"
+            android:src="@drawable/spindo_like_small" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/backgound"
+        android:visibility="invisible"
+        android:background="#99000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/won_voucher"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150ROR">
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140ROR"
+            android:background="@android:color/white"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitXY"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:id="@+id/expirydate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Exp. Date"
+                    android:textColor="@color/voucher_color"
+                    android:textSize="@dimen/small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:textSize="@dimen/small"
+                    android:layout_below="@+id/expirydate"
+                    android:layout_centerHorizontal="true"
+                    android:text="12/4/2015"
+                    android:textColor="@color/voucher_color"
+                    />
+
+                <TextView
+                    android:id="@+id/offer_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/voucher_color"
+                    android:textSize="@dimen/_16ROR" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/voucher_color"
+                android:layout_toLeftOf="@+id/relativeLayout2"
+                android:layout_toRightOf="@+id/image"
+                android:layout_toStartOf="@+id/relativeLayout2"
+                android:gravity="center"
+                android:typeface="sans"
+                android:text="Get UpTo 30% off on Footwear"
+                android:textSize="@dimen/large" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/line_monu"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/offer_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/voucher_color"
+                android:text="All Region Across Asia"
+                android:textSize="@dimen/small" />
+        </RelativeLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

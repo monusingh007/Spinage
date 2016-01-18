@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/_10ROR"
+    android:layout_marginRight="@dimen/_10ROR"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:background="@drawable/slideraalertback"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/dialog_text"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/large"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10ROR"
+            android:layout_marginLeft="@dimen/_20ROR"
+            android:layout_marginRight="@dimen/_20ROR"
+            android:text="Share on Facebook"
+           android:textColor="@android:color/white"
+            android:layout_height="@dimen/_40ROR"/>
+    <!--    <TextView
+            android:id="@+id/caption"
+            android:text="Add Caption"
+            android:layout_below="@+id/dialog_text"
+            android:textSize="@dimen/large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+<RelativeLayout
+    android:id="@+id/data"
+    android:layout_marginTop="@dimen/_20ROR"
+    android:layout_width="match_parent"
+    android:background="@drawable/slideraalertback"
+    android:layout_marginLeft="@dimen/_20ROR"
+    android:layout_marginRight="@dimen/_20ROR"
+    android:layout_below="@+id/dialog_text"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/caption"
+        android:hint="Add Caption"
+        android:textSize="@dimen/medium"
+
+        android:layout_width="match_parent"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:layout_height="@dimen/_40ROR" />
+    <ImageView
+        android:id="@+id/imagefb"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/caption"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_130ROR" />
+
+</RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_20ROR"
+            android:layout_marginLeft="@dimen/_40ROR"
+            android:layout_below="@+id/data"
+            android:layout_marginBottom="@dimen/_20ROR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/yes_but"
+
+                android:layout_width="@dimen/_50ROR"
+                android:layout_height="@dimen/button_height"
+                android:text="Yes"
+                android:textAllCaps="false"
+                android:textColor="@color/textcolor"
+                android:background="@color/button_background"
+                android:textSize="@dimen/large" />
+            <Button
+                android:id="@+id/no_but"
+                android:layout_width="@dimen/_50ROR"
+                android:layout_height="@dimen/button_height"
+                android:text="No"
+                android:textAllCaps="false"
+                android:layout_marginLeft="@dimen/_20ROR"
+                android:layout_marginRight="@dimen/_40ROR"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/textcolor"
+                android:background="@color/button_background"
+                android:textSize="@dimen/large" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

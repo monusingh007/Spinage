@@ -1,0 +1,479 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.spinages.vWallet.VoucherDetails">
+    <TextView
+        android:id="@+id/title"
+        android:text="History"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/activityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="@dimen/_10ROR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140ROR">
+
+            <RelativeLayout
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180ROR"
+                android:layout_above="@+id/relativeLayout"
+                android:layout_marginTop="@dimen/_10ROR"
+                android:layout_marginBottom="@dimen/_10ROR"
+                android:layout_marginLeft="@dimen/_10ROR"
+                android:layout_marginRight="@dimen/_10ROR"
+               >
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="@dimen/_110ROR"
+                    android:layout_height="@dimen/_100ROR"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="@dimen/_60ROR"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true">
+
+                    <TextView
+                        android:id="@+id/expirydate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/voucher_color"
+                        android:text="Exp. Date"
+                        android:typeface="sans"
+                        android:textSize="@dimen/small"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/expirydate"
+                        android:layout_centerHorizontal="true"
+                        android:text="12/4/2015"
+                        android:typeface="sans"
+                        android:textColor="@color/voucher_color"
+                        android:textSize="@dimen/small" />
+
+                    <TextView
+                        android:id="@+id/offer_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:text=""
+                        android:textColor="@color/voucher_color"
+                       android:typeface="sans"
+                        android:textSize="@dimen/_20ROR" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/relativeLayout2"
+                    android:layout_toRightOf="@+id/image"
+                    android:typeface="sans"
+                    android:layout_marginLeft="@dimen/_5ROR"
+                    android:layout_toStartOf="@+id/relativeLayout2"
+                    android:textColor="@color/voucher_color"
+                    android:gravity="center"
+                    android:text="Get UpTo 30% off on Footwear"
+                   android:textSize="@dimen/large" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_1ROR"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/line_monu"
+                     />
+
+                <TextView
+                    android:id="@+id/offer_region"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/voucher_color"
+                    android:typeface="sans"
+                    android:text="All Region Across Asia"
+                   android:textSize="@dimen/small" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/likeusLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5ROR"
+        android:layout_marginBottom="@dimen/_5ROR"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_view1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.facebook.share.widget.LikeView
+                android:id="@+id/likeView"
+                android:layout_width="@dimen/_58ROR"
+                android:layout_height="@dimen/_25ROR"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15ROR"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_5ROR"
+                android:typeface="sans"
+                android:textSize="@dimen/small"
+                android:textColor="@android:color/white"
+                android:text="GETS YOU"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15ROR"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_5ROR"
+                android:src="@drawable/spinage_logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15ROR"
+                android:layout_marginLeft="@dimen/_5ROR"
+                android:typeface="sans"
+                android:gravity="center"
+                android:textSize="@dimen/small"
+                android:textColor="@android:color/white"
+                android:text="+1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25ROR"
+                android:layout_marginLeft="@dimen/_5ROR"
+                android:src="@drawable/spindo_like_small"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80ROR"
+        android:gravity="center"
+
+        android:layout_below="@+id/likeusLayout"
+        android:background="@drawable/transparent_box_big">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/id1"
+                android:src="@drawable/dot_red"
+                android:layout_marginLeft="@dimen/_10ROR"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_5ROR"
+                android:layout_height="@dimen/_5ROR"/>
+
+            <TextView
+                android:id="@+id/validity_time"
+                android:layout_toRightOf="@+id/id1"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/_5ROR"
+                android:layout_height="wrap_content"
+                android:text="Voucher Validity Timing:"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/small"/>
+
+            <TextView
+                android:id="@+id/validity_text"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+               android:layout_marginLeft="@dimen/_10ROR"
+                android:layout_toRightOf="@+id/validity_time"
+                android:text="9am-9pm"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/small"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_below="@+id/linear2"
+            android:layout_marginTop="@dimen/_10ROR"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/id2"
+                android:layout_marginLeft="@dimen/_10ROR"
+                android:src="@drawable/dot_red"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_5ROR"
+                android:layout_height="@dimen/_5ROR"/>
+            <TextView
+                android:id="@+id/days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5ROR"
+                android:layout_below="@+id/validity_text"
+                android:text="@string/period"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/small"/>
+
+            <TextView
+                android:id="@+id/days_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/validity_text"
+                android:layout_toRightOf="@+id/days"
+                android:text=""
+                android:layout_marginLeft="@dimen/_10ROR"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/small"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_marginTop="@dimen/_10ROR"
+            android:layout_below="@+id/linear"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/id3"
+                android:layout_marginLeft="@dimen/_10ROR"
+                android:src="@drawable/dot_red"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_5ROR"
+                android:layout_height="@dimen/_5ROR"/>
+            <TextView
+                android:id="@+id/days2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/_5ROR"
+                android:typeface="sans"
+                android:layout_below="@+id/validity_text"
+                android:text="@string/days"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/small"/>
+
+            <TextView
+                android:id="@+id/days2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/validity_text"
+                android:layout_toRightOf="@+id/days"
+                android:text="ttttt"
+                android:layout_marginLeft="@dimen/_10ROR"
+                android:typeface="sans"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/small"/>
+        </LinearLayout>
+        <!-- <TextView
+                android:id="@+id/reviews"
+                android:layout_width="@dimen/_130ROR"
+                android:layout_marginTop="@dimen/_10ROR"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/days_text"
+                android:text="@string/reviews"
+                android:lines="2"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/small" />
+
+            <TextView
+                android:id="@+id/reviews_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/days_text"
+                android:layout_marginTop="@dimen/_10ROR"
+                android:layout_toRightOf="@+id/reviews"
+                android:text=""
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/small" />-->
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+   android:layout_marginTop="@dimen/_5ROR"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+
+        >
+
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="@dimen/_130ROR"
+            android:layout_height="@dimen/_20ROR"
+            android:gravity="bottom"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/_20ROR"
+            android:text="@string/number"
+            android:layout_marginTop="@dimen/_10ROR"
+            android:typeface="sans"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/small"/>
+
+        <TextView
+            android:id="@+id/number_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20ROR"
+            android:typeface="sans"
+            android:paddingLeft="@dimen/_10ROR"
+            android:layout_marginTop="@dimen/_10ROR"
+            android:layout_toRightOf="@+id/number"
+            android:background="@drawable/history_line"
+            android:layout_marginLeft="@dimen/_20ROR"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/small"/>
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="@dimen/_130ROR"
+            android:layout_below="@id/number_text"
+            android:layout_height="@dimen/_20ROR"
+            android:gravity="bottom"
+            android:typeface="sans"
+            android:layout_marginLeft="@dimen/_20ROR"
+            android:layout_marginTop="@dimen/_15ROR"
+            android:text="@string/location"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/small"/>
+
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/number_text"
+            android:layout_height="@dimen/_20ROR"
+            android:gravity="bottom"
+            android:layout_marginTop="@dimen/_15ROR"
+            android:paddingLeft="@dimen/_10ROR"
+            android:layout_toRightOf="@+id/location"
+            android:background="@drawable/history_line"
+            android:text=""
+            android:typeface="sans"
+            android:layout_marginLeft="@dimen/_20ROR"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/small"/>
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="@dimen/_130ROR"
+            android:layout_height="@dimen/_20ROR"
+            android:gravity="bottom"
+            android:layout_marginLeft="@dimen/_20ROR"
+            android:layout_below="@+id/location_text"
+            android:layout_marginTop="@dimen/_15ROR"
+            android:text="@string/id"
+            android:typeface="sans"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/small"/>
+
+        <TextView
+            android:id="@+id/id_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20ROR"
+            android:gravity="bottom"
+            android:layout_below="@+id/location_text"
+            android:layout_marginTop="@dimen/_15ROR"
+            android:paddingLeft="@dimen/_10ROR"
+            android:layout_toRightOf="@+id/id"
+            android:background="@drawable/history_line"
+            android:text=""
+            android:typeface="sans"
+            android:layout_marginLeft="@dimen/_20ROR"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/small"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout3"
+        android:layout_centerInParent="true"
+           android:typeface="sans"
+        android:text="@string/terms"
+        android:layout_marginTop="@dimen/_10ROR"
+
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="@dimen/_8ROR"/>
+    <TextView
+        android:id="@+id/plzread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/terms"
+android:typeface="sans"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_2ROR"
+        android:text="(Please read)"
+
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/_8ROR"/>
+    <Button
+        android:id="@+id/review_btn"
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_10ROR"
+        android:layout_marginLeft="@dimen/_20ROR"
+        android:layout_marginRight="@dimen/_20ROR"
+        android:background="@color/button_background"
+        android:text="Read Review"
+        android:textAllCaps="false"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/large"/>
+
+
+
+</RelativeLayout>

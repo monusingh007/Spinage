@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/_5ROR"
+       >
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/_100ROR"
+            android:layout_height="@dimen/_100ROR"
+            android:src="@drawable/image_"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true" />
+        <TextView
+            android:layout_marginTop="@dimen/_20ROR"
+            android:id="@+id/profile_name"
+            android:layout_below="@id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:text="Rebekka Tiara"
+            android:textSize="@dimen/medium"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!--<Button-->
+            <!--android:id="@+id/draw_drawer"-->
+            <!--android:layout_marginTop="@dimen/_20ROR"-->
+            <!--android:layout_width="@dimen/_15ROR"-->
+            <!--android:layout_toRightOf="@+id/profile_image"-->
+            <!--android:layout_below="@+id/profile_image"-->
+            <!--android:background="@drawable/down"-->
+            <!--android:layout_height="@dimen/_15ROR"/>-->
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/nav_header_container"
+        android:layout_marginTop="@dimen/_15ROR" />
+
+
+</RelativeLayout>
+
